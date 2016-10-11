@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Menu App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="styles/styles.css">-->
+  </head>
+<body ng-app="MenuApp">
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js" integrity="sha256-6Sr0HqNgUf/p88g6vsl87CrAnNqiOWhjlY6LS8jeWHA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js" integrity="sha256-WMX1oGxdlHQ+INIGXgmbExcvhBREk8bR9fSseB2qIVs=" crossorigin="anonymous"></script>
+  
+  <script src="scripts/menuapp.module.js"></script>
+  <script src="scripts/data.module.js"></script>
+  <script src="scripts/menudata.service.js"></script>
+  <script src="scripts/categories.component.js"></script>
+  <script src="scripts/categories-list.controller.js"></script>
+  <script src="scripts/items.component.js"></script>
+  <script src="scripts/items-list.controller.js"></script>
+
+  <script src="scripts/routes.js"></script>
+</body>
+</html>

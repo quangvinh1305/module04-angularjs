@@ -1,0 +1,15 @@
+<div ng-if="$ctrl.items.length!=0">
+    <h3>Items in {{ ::$ctrl.categoryName }}</h3>
+
+    <ul>
+        <li ng-repeat="item in $ctrl.items">
+
+            <strong>{{ ::item.name }}</strong><span ng-if="item.description"> &mdash; </span>{{ ::item.description }}
+        </li>
+    </ul>
+</div>
+
+
+<div ng-if="$ctrl.items.length==0" class="alert alert-warning" role="alert">
+    No items
+</div>
